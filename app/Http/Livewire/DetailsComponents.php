@@ -14,7 +14,6 @@ class DetailsComponents extends Component
     }
 
     public function store($product_id,$product_name,$product_price){
-    //    dd('ok');
         Cart::add($product_id,$product_name,1,$product_price)->associate('App\Models\Product');
         session()->flash('success_message','Product added to cart');
         return redirect()->route('cart');
