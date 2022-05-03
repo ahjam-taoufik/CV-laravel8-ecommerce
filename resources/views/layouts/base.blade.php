@@ -81,7 +81,12 @@
 													<li class="menu-item">
 													   <a href="{{route('admin.categories')}}" title="Categories" >Categories</a>
 													</li>
-													{{-- category section--}}
+												
+													{{-- product section --}}
+													<li class="menu-item">
+													   <a href="{{route('admin.products')}}" title="Products" >Products</a>
+													</li>
+												
 
 													{{-- logout section --}}
 													<li class="menu-item">
@@ -90,7 +95,7 @@
 													<form id="logout-form" method="POST" action="{{route('logout')}}">
 													 @csrf
 													</form>
-													{{-- logout section--}}
+													
 													
 												</ul>
 											</li>
