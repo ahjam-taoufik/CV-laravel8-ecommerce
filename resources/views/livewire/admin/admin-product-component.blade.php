@@ -21,7 +21,7 @@
                          </h3>
                        </div>
                        <div class="col-md-6">
-                           <a href="{{ route('admin.products')}}" class="btn btn-success pull-right">Add New Products</a>
+                           <a href="{{ route('admin.addproduct')}}" class="btn btn-success pull-right">Add New Products</a>
                        </div>
                      </div>
                  </div>
@@ -59,9 +59,9 @@
                                      <td>{{ $product->created_at }}</td>
                                      {{-- <td>{{ $product->updated_at }}</td> --}}
                                      <td>
-                                         {{-- <a href="{{ route('admin.editproduct',['product_slug'=>$product->slug] ) }}" class="btn btn-xs btn-info">
+                                         <a href="{{ route('admin.editproduct',['product_slug'=>$product->slug] ) }}" class="btn btn-xs btn-info">
                                              <i class="fa fa-edit"></i>
-                                         </a> --}}
+                                         </a>
                                          {{-- <a href="#" class="btn btn-xs btn-danger" wire:click="deleteProduct({{ $product->id }})" style="margin-left:15px">
                                              <i class="fa fa-trash"></i>
                                          </a> --}}
