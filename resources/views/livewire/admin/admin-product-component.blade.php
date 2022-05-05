@@ -62,9 +62,10 @@
                                          <a href="{{ route('admin.editproduct',['product_slug'=>$product->slug] ) }}" class="btn btn-xs btn-info">
                                              <i class="fa fa-edit"></i>
                                          </a>
-                                         {{-- <a href="#" class="btn btn-xs btn-danger" wire:click="deleteProduct({{ $product->id }})" style="margin-left:15px">
+                                         <a href="#" class="btn btn-xs btn-danger" wire:click="deleteProduct({{ $product->id }})" style="margin-left:15px">
                                              <i class="fa fa-trash"></i>
-                                         </a> --}}
+                                         </a>
+                                       
                                      </td>
                                  </tr>
                              @endforeach 
